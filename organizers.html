@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hackathon Organizers Registration</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <h2>Hackathon Organizers Registration Form</h2>
+    <form action="submit_form.php" method="post">
+        <h3>Organizer Information:</h3>
+        <label for="organization_name">Organization/Team Name:</label><br>
+        <input type="text" id="organization_name" name="organization_name" required><br>
+
+        <label for="contact_person">Contact Person:</label><br>
+        <input type="text" id="contact_person" name="contact_person" required><br>
+
+        <label for="email">Email Address:</label><br>
+        <input type="email" id="email" name="email" required><br>
+
+        <label for="phone">Phone Number:</label><br>
+        <input type="text" id="phone" name="phone" required><br>
+
+        <label for="website">Organization Website:</label><br>
+        <input type="text" id="website" name="website"><br>
+
+        <h3>Hackathon Details:</h3>
+        <label for="hackathon_name">Hackathon Name:</label><br>
+        <input type="text" id="hackathon_name" name="hackathon_name" required><br>
+
+        <label for="date">Proposed Date(s) of Hackathon:</label><br>
+        <input type="date" id="date" name="date" required><br>
+
+        <label for="duration">Proposed Duration (in hours/days):</label><br>
+        <input type="text" id="duration" name="duration" required><br>
+
+        <label for="participants">Expected Number of Participants:</label><br>
+        <input type="number" id="participants" name="participants" required><br>
+
+        <label for="theme">Hackathon Theme/Idea:</label><br>
+        <input type="text" id="theme" name="theme" required><br>
+
+        <label for="description">Description of the Hackathon:</label><br>
+        <textarea id="description" name="description" rows="4" required></textarea><br>
+
+        <h3>Logistics:</h3>
+        <label for="venue">Venue (if known):</label><br>
+        <input type="text" id="venue" name="venue"><br>
+
+        <label for="location">City/Location:</label><br>
+        <input type="text" id="location" name="location" required><br>
+
+        <label>Facilities Provided:</label><br>
+        <input type="checkbox" id="wifi" name="facilities[]" value="Wi-Fi">
+        <label for="wifi">Wi-Fi</label><br>
+        <!-- Add more checkboxes for other facilities -->
+
+        <label for="requirements">Any Special Requirements:</label><br>
+        <textarea id="requirements" name="requirements" rows="4"></textarea><br>
+
+        <h3>Support/Resources:</h3>
+        <label for="mentors">Mentors Available:</label>
+        <input type="radio" id="mentors_yes" name="mentors" value="Yes">
+        <label for="mentors_yes">Yes</label>
+        <input type="radio" id="mentors_no" name="mentors" value="No">
+        <label for="mentors_no">No</label><br>
+
+        <label for="sponsorship">Sponsorship Opportunities:</label>
+        <input type="radio" id="sponsorship_yes" name="sponsorship" value="Yes">
+        <label for="sponsorship_yes">Yes</label>
+        <input type="radio" id="sponsorship_no" name="sponsorship" value="No">
+        <label for="sponsorship_no">No</label><br>
+
+        <label for="resources">Additional Resources Needed:</label><br>
+        <textarea id="resources" name="resources" rows="4"></textarea><br>
+
+        <h3>Terms and Conditions:</h3>
+        <p>By submitting this form, you agree to abide by the rules and regulations set forth by the organizing committee. You also agree to provide accurate information and maintain communication throughout the planning and execution phases of the hackathon.</p>
+        <input type="submit" value="Submit">
+    </form>
+    <script src="script.js"></script>
+</body>
+</html>
